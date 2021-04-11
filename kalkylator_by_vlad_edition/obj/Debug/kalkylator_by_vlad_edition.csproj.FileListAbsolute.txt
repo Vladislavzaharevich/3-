@@ -1,0 +1,10 @@
+C:\Users\student\source\repos\kalkylator_by_vlad_edition\kalkylator_by_vlad_edition\bin\Debug\kalkylator_by_vlad_edition.exe.config
+C:\Users\student\source\repos\kalkylator_by_vlad_edition\kalkylator_by_vlad_edition\bin\Debug\kalkylator_by_vlad_edition.exe
+C:\Users\student\source\repos\kalkylator_by_vlad_edition\kalkylator_by_vlad_edition\bin\Debug\kalkylator_by_vlad_edition.pdb
+C:\Users\student\source\repos\kalkylator_by_vlad_edition\kalkylator_by_vlad_edition\obj\Debug\kalkylator_by_vlad_edition.csprojAssemblyReference.cache
+C:\Users\student\source\repos\kalkylator_by_vlad_edition\kalkylator_by_vlad_edition\obj\Debug\kalkylator_by_vlad_edition.Form1.resources
+C:\Users\student\source\repos\kalkylator_by_vlad_edition\kalkylator_by_vlad_edition\obj\Debug\kalkylator_by_vlad_edition.Properties.Resources.resources
+C:\Users\student\source\repos\kalkylator_by_vlad_edition\kalkylator_by_vlad_edition\obj\Debug\kalkylator_by_vlad_edition.csproj.GenerateResource.cache
+C:\Users\student\source\repos\kalkylator_by_vlad_edition\kalkylator_by_vlad_edition\obj\Debug\kalkylator_by_vlad_edition.csproj.CoreCompileInputs.cache
+C:\Users\student\source\repos\kalkylator_by_vlad_edition\kalkylator_by_vlad_edition\obj\Debug\kalkylator_by_vlad_edition.exe
+C:\Users\student\source\repos\kalkylator_by_vlad_edition\kalkylator_by_vlad_edition\obj\Debug\kalkylator_by_vlad_edition.pdb
