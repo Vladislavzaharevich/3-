@@ -78,7 +78,7 @@ namespace kalkylator_by_vlad_edition
 
         private void buttonplus_Click(object sender, EventArgs e)
         {
-            //123
+            
             if (textBox1.TextLength == 0) return;
             if (textBox1.Text[textBox1.TextLength - 1] == '+') return;
             if (textBox1.Text[textBox1.TextLength - 1] == '*') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
@@ -88,7 +88,6 @@ namespace kalkylator_by_vlad_edition
             if (textBox1.Text[textBox1.TextLength - 1] == ')') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
             if (textBox1.Text[textBox1.TextLength - 1] == '(') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
             if (textBox1.Text[textBox1.TextLength - 1] == '.') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
-            textBox1.Text += "^";
 
             textBox1.Text +=  "+" ;
         }
@@ -104,7 +103,6 @@ namespace kalkylator_by_vlad_edition
             if (textBox1.Text[textBox1.TextLength - 1] == ')') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
             if (textBox1.Text[textBox1.TextLength - 1] == '(') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
             if (textBox1.Text[textBox1.TextLength - 1] == '.') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
-            textBox1.Text += "^";
             textBox1.Text += "-";
         }
 
@@ -119,7 +117,7 @@ namespace kalkylator_by_vlad_edition
             if (textBox1.Text[textBox1.TextLength - 1] == ')') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
             if (textBox1.Text[textBox1.TextLength - 1] == '(') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
             if (textBox1.Text[textBox1.TextLength - 1] == '.') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
-            textBox1.Text += "^";
+
             textBox1.Text += "*";
         }
 
@@ -134,7 +132,6 @@ namespace kalkylator_by_vlad_edition
             if (textBox1.Text[textBox1.TextLength - 1] == ')') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
             if (textBox1.Text[textBox1.TextLength - 1] == '(') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
             if (textBox1.Text[textBox1.TextLength - 1] == '.') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
-            textBox1.Text += "^";
             textBox1.Text += "/";
         }
 
@@ -163,7 +160,6 @@ namespace kalkylator_by_vlad_edition
             if (textBox1.Text[textBox1.TextLength - 1] == ')') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
             if (textBox1.Text[textBox1.TextLength - 1] == '/') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
             if (textBox1.Text[textBox1.TextLength - 1] == '.') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
-            textBox1.Text += "^";
             textBox1.Text += "(";
         }
 
@@ -178,21 +174,28 @@ namespace kalkylator_by_vlad_edition
             if (textBox1.Text[textBox1.TextLength - 1] == '/') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
             if (textBox1.Text[textBox1.TextLength - 1] == '(') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
             if (textBox1.Text[textBox1.TextLength - 1] == '.') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
-            textBox1.Text += "^";
             textBox1.Text += ")";
         }
         private void buttonpoint_Click(object sender, EventArgs e)
         {
-            if (textBox1.TextLength == 0) return;
+            if (textBox1.TextLength == 0 
+                || textBox1.Text[textBox1.TextLength - 1] == '*'
+                || textBox1.Text[textBox1.TextLength - 1] == '-'
+                || textBox1.Text[textBox1.TextLength - 1] == '-'
+                || textBox1.Text[textBox1.TextLength - 1] == '+'
+                || textBox1.Text[textBox1.TextLength - 1] == '/'
+                || textBox1.Text[textBox1.TextLength - 1] == ')'
+                || textBox1.Text[textBox1.TextLength - 1] == '('
+                || textBox1.Text[textBox1.TextLength - 1] == '^'
+                )
+            {
+                textBox1.Text += "0.";
+                return;
+            }
+            
+
             if (textBox1.Text[textBox1.TextLength - 1] == '.') return;
-            if (textBox1.Text[textBox1.TextLength - 1] == '*') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
-            if (textBox1.Text[textBox1.TextLength - 1] == '-') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
-            if (textBox1.Text[textBox1.TextLength - 1] == '+') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
-            if (textBox1.Text[textBox1.TextLength - 1] == '^') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
-            if (textBox1.Text[textBox1.TextLength - 1] == ')') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
-            if (textBox1.Text[textBox1.TextLength - 1] == '(') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
-            if (textBox1.Text[textBox1.TextLength - 1] == '/') textBox1.Text = textBox1.Text.Remove(textBox1.Text.Length - 1);
-            textBox1.Text += "^";
+ 
             textBox1.Text += ".";
         }
 
